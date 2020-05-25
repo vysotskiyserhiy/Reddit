@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,24 @@
 		899EF55A247BE2D6008E2CEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899EF559247BE2D6008E2CEF /* Assets.xcassets */; };
 		899EF55D247BE2D6008E2CEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899EF55C247BE2D6008E2CEF /* Preview Assets.xcassets */; };
 		899EF560247BE2D6008E2CEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899EF55E247BE2D6008E2CEF /* LaunchScreen.storyboard */; };
+		899EF568247BE7FE008E2CEF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899EF567247BE7FE008E2CEF /* Models.swift */; };
+		899EF56B247BE966008E2CEF /* KingfisherSwiftUIDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 899EF56A247BE966008E2CEF /* KingfisherSwiftUIDynamic */; };
+		899EF56C247BE966008E2CEF /* KingfisherSwiftUIDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 899EF56A247BE966008E2CEF /* KingfisherSwiftUIDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		899EF56D247BE967008E2CEF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				899EF56C247BE966008E2CEF /* KingfisherSwiftUIDynamic in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		899EF550247BE2D6008E2CEF /* Reddit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reddit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +41,7 @@
 		899EF55C247BE2D6008E2CEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		899EF55F247BE2D6008E2CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		899EF561247BE2D6008E2CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		899EF567247BE7FE008E2CEF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899EF56B247BE966008E2CEF /* KingfisherSwiftUIDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +78,7 @@
 				899EF553247BE2D6008E2CEF /* AppDelegate.swift */,
 				899EF555247BE2D6008E2CEF /* SceneDelegate.swift */,
 				899EF557247BE2D6008E2CEF /* ContentView.swift */,
+				899EF567247BE7FE008E2CEF /* Models.swift */,
 				899EF559247BE2D6008E2CEF /* Assets.xcassets */,
 				899EF55E247BE2D6008E2CEF /* LaunchScreen.storyboard */,
 				899EF561247BE2D6008E2CEF /* Info.plist */,
@@ -85,12 +105,16 @@
 				899EF54C247BE2D6008E2CEF /* Sources */,
 				899EF54D247BE2D6008E2CEF /* Frameworks */,
 				899EF54E247BE2D6008E2CEF /* Resources */,
+				899EF56D247BE967008E2CEF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Reddit;
+			packageProductDependencies = (
+				899EF56A247BE966008E2CEF /* KingfisherSwiftUIDynamic */,
+			);
 			productName = Reddit;
 			productReference = 899EF550247BE2D6008E2CEF /* Reddit.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +143,9 @@
 				Base,
 			);
 			mainGroup = 899EF547247BE2D6008E2CEF;
+			packageReferences = (
+				899EF569247BE966008E2CEF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 899EF551247BE2D6008E2CEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +176,7 @@
 				899EF554247BE2D6008E2CEF /* AppDelegate.swift in Sources */,
 				899EF556247BE2D6008E2CEF /* SceneDelegate.swift in Sources */,
 				899EF558247BE2D6008E2CEF /* ContentView.swift in Sources */,
+				899EF568247BE7FE008E2CEF /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		899EF569247BE966008E2CEF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		899EF56A247BE966008E2CEF /* KingfisherSwiftUIDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 899EF569247BE966008E2CEF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUIDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 899EF548247BE2D6008E2CEF /* Project object */;
 }
